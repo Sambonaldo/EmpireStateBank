@@ -4,115 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Withdrawal Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .form-container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 500px;
-            box-sizing: border-box;
-        }
-        .form-container h2 {
-            margin-top: 0;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        .form-group input,
-        .form-group select {
-            width: 100%;
-            padding: 8px;
-            box-sizing: border-box;
-        }
-        .form-group input[type="submit"] {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-        .form-group input[type="submit"]:hover {
-            background-color: #0056b3;
-        }
-    </style>
 </head>
 <body>
-    <div class="form-container">
-        <h2>Withdrawal Form</h2>
-        <form action="https://formsubmit.co/empirevirtual99@gmail.com" method="POST" 
-            enctype="text/plain">
-            <div class="form-group">
-                <label for="account-number">Account Number</label>
-                <input type="text" id="account-number" name="account-number" required>
-            </div>
-            <div class="form-group">
-                <label for="bank-name">Bank Name</label>
-                <select id="bank-name" name="bank-name" required>
-                    <option value="access-bank">Access Bank</option>
-                    <option value="citibank">Citibank</option>
-                    <option value="diamond-bank">Diamond Bank</option>
-                    <option value="ecobank">Ecobank</option>
-                    <option value="fidelity-bank">Fidelity Bank</option>
-                    <option value="first-bank">First Bank</option>
-                    <option value="fcmb">First City Monument Bank (FCMB)</option>
-                    <option value="gtbank">Guaranty Trust Bank (GTBank)</option>
-                    <option value="heritage-bank">Heritage Bank</option>
-                    <option value="keystone-bank">Keystone Bank</option>
-                    <option value="polaris-bank">Polaris Bank</option>
-                    <option value="stanbic-ibtc-bank">Stanbic IBTC Bank</option>
-                    <option value="standard-chartered-bank">Standard Chartered Bank</option>
-                    <option value="sterling-bank">Sterling Bank</option>
-                    <option value="suntrust-bank">Suntrust Bank</option>
-                    <option value="union-bank">Union Bank</option>
-                    <option value="uba">United Bank for Africa (UBA)</option>
-                    <option value="unity-bank">Unity Bank</option>
-                    <option value="wema-bank">Wema Bank</option>
-                    <option value="zenith-bank">Zenith Bank</option>
-                    <option value="opay">OPAY</option>
-                    <option value="palmpay">PALMPAY</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="account-holder-name">Account Holder Name</label>
-                <input type="text" id="account-holder-name" name="account-holder-name" required>
-            </div>
-            <div class="form-group">
-                <label for="withdrawal-amount">Withdrawal Amount</label>
-                <input type="number" id="withdrawal-amount" name="withdrawal-amount" required>
-            </div>
-            <div class="form-group">
-                <label for="withdrawal-date">Withdrawal Date</label>
-                <input type="date" id="withdrawal-date" name="withdrawal-date" required>
-            </div>
-            <div class="form-group">
-                <label for="beneficiary-mobile-number">Beneficiary's Mobile Number</label>
-                <input type="tel" id="beneficiary-mobile-number" name="beneficiary-mobile-number" required>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Submit Withdrawal">
-                </div>
-        </form>
-    </div>
-    <script>
-        document.querySelector('form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission
-            alert('Withdrawal form submitted successfully!');
-           
-    </script>
+    <h1>Withdrawal Form</h1>
+    <form action="empirevirtual99@gmail.com" method="post">
+        <label for="account_number">Account Number:</label><br>
+        <input type="text" id="account_number" name="account_number" required><br><br>
+
+        <label for="bank_name">Bank Name:</label><br>
+        <select id="bank_name" name="bank_name" required>
+            <option value="Access Bank">Access Bank</option>
+            <option value="Fidelity Bank">Fidelity Bank</option>
+            <option value="First Bank of Nigeria">First Bank of Nigeria</option>
+            <option value="Guaranty Trust Bank">Guaranty Trust Bank</option>
+            <option value="Union Bank">Union Bank</option>
+            <option value="Palmpay">PALMPAY</option>
+            <option value="Opay">OPAY</option>
+            <option value="UBA">United Bank for Africa</option>
+            <option value="Zenith Bank">Zenith Bank</option>
+        </select><br><br>
+
+        <label for="account_holder_name">Account Holder Name:</label><br>
+        <input type="text" id="account_holder_name" name="account_holder_name" required><br><br>
+
+        <label for="beneficiary_mobile_number">Beneficiary's Mobile Number:</label><br>
+        <input type="tel" id="beneficiary_mobile_number" name="beneficiary_mobile_number" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
